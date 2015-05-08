@@ -46,7 +46,6 @@
 	<div class="col-md-12">
 	<?js } ?>
 		<div id="main">
-    		<h1 class="page-title"><?js= title ?></h1>
 			<?js= content ?>
 		</div>
 	</div>
@@ -93,7 +92,13 @@ $( function () {
 
 		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
 	} );
+	
+	$( "[id*='.']" ).each( function () {
+		var $this = $( this );
 
+		$this.attr( "id", $this.attr( "id" ).replace( ".", "-" ) );
+	} );
+	
 	$( "#toc" ).toc( {
 		anchorName  : function ( i, heading, prefix ) {
 			return $( heading ).attr( "id" ) || ( prefix + i );
