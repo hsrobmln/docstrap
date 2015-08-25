@@ -1,7 +1,7 @@
 {
   "name": "ink-docstrap",
   "private": true,
-  "version": "0.5.3-mln",
+  "version": "0.5.4-mln",
   "decription": "A template for JSDoc3 based on Bootstrap and Bootswatch",
   "devDependencies": {
     "async": "~0.2.8",
@@ -9,9 +9,9 @@
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-less": "~0.9.0",
     "grunt-contrib-uglify": "^0.4.0",
-    "grunt-jsdoc": "^0.5.4",
+    "grunt-jsdoc": "^0.6.8",
     "grunt-shell": "~0.2.2",
-    "jsdoc": "~3.3.0-alpha5",
+    "jsdoc": "~3.3.2",
     "lodash": "~2.4.1"
   },
   "license": "MIT",
